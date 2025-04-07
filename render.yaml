@@ -1,0 +1,18 @@
+# Exported from Render on 2025-04-07T18:05:34Z
+services:
+- type: web
+  name: michaelsommer
+  runtime: node
+  repo: https://github.com/mxsommer/michaelsommer-dev
+  plan: free
+  envVars:
+  - key: MAIL_RECEIVER
+    sync: false
+  - key: MAIL_PASS
+    sync: false
+  - key: MAIL_USER
+    sync: false
+  region: oregon
+  buildCommand: npm install
+  startCommand: node server.js
+version: "1"
