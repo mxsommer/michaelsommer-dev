@@ -14,5 +14,5 @@ services:
     sync: false
   region: oregon
   buildCommand: npm install
-  startCommand: node server.js
+  startCommand: node server/server.js
 version: "1"
