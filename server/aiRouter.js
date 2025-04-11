@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const lucid1 = require("../ai/lucid1");
 
-// GET /ai/analyze?domain=yourdomain.dev
+// GET /ai/analyze?domain=michaelsommer.dev
 router.get("/analyze", (req, res) => {
   const domain = req.query.domain;
 
